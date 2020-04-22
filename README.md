@@ -22,7 +22,12 @@ ____
 		- PHP REST API
 		- Using [Restler](https://github.com/Luracast/Restler) framework
 		- Communicates with MySQL database
-	
+	- src
+		- application pages
+		- Using ionic and angular
+		
+		
+		
 	
 	
 	
