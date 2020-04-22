@@ -1,0 +1,24 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: tahoma;
+}
+
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: green;
+    
+}
+
+.navbar{
+    position: fixed;
+}
+
+.nav_right ul{
+    position: absolute;
+    margin-left: 600px;
+    
+   
+}

@@ -1,0 +1,39 @@
+body{
+    background-color: #333335;
+    margin: 0px;
+}
+.row{
+    position: fixed;
+}
+
+#sidebar{
+    height: 100%;
+    background-color: #47464b;
+    border-right: 1px solid snow;
+    position: fixed;
+    padding: 0px;
+    z-index: 1;
+
+
+}
+.col-11{
+    position: relative; 
+    right:  50px;
+}
+
+ul{
+    margin-top: 100px;
+    
+}
+ul li{
+    padding-top: 50px;
+}
+
+
+div .box1{
+    
+     background-color: green;
+     border: 5px solid blue;
+     
+
+}
