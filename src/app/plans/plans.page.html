@@ -1,0 +1,67 @@
+<ion-header >
+  
+  <ion-toolbar color="light">
+    <ion-button slot="start" href="#" color="light">
+     <ion-icon   name="md-arrow-round-back" md="md-arrow-round-back"></ion-icon >    
+    </ion-button>
+    <ion-title>{{companie.c_name}} company</ion-title>
+
+  </ion-toolbar>
+
+  </ion-header>
+
+<ion-content>
+  <ion-card>
+  <ion-card-header color="primary">
+    <ion-card-title> {{companie.c_name}} company</ion-card-title>
+  </ion-card-header>
+
+  <hr>
+  <ion-item >
+    <ion-icon name="ios-call" slot="start"></ion-icon>
+    <ion-label>+966 {{companie.c_phone}}</ion-label>
+  </ion-item>
+
+  <ion-item >
+    <ion-icon name="ios-mail" slot="start"></ion-icon>
+    <ion-label>{{companie.c_email}}</ion-label>
+  </ion-item>
+
+  <ion-item >
+    <ion-icon name="ios-globe" slot="start">
+    </ion-icon>
+    <ion-label>{{companie.c_website}}</ion-label>
+  </ion-item>
+
+  
+</ion-card>
+
+<fieldset>
+<legend> 
+  <ion-icon name="ios-pin" slot="start"></ion-icon>
+  Offices
+</legend>
+
+<ion-chip *ngFor="let item of offices">
+  <a href="{{item.office_location}}" target="_blank">
+  <ion-label>{{item.o_city}}</ion-label>
+  </a>
+</ion-chip>
+
+
+
+
+
+<ion-card color="light" >
+  
+  
+  <ion-item *ngFor="let item of plans" class="item" color="primary" href="plan/{{item.p_id}}" >
+    <ion-label>{{item.p_name}}</ion-label>
+ </ion-item>
+
+
+
+
+</ion-card>
+  </fieldset>
+</ion-content>

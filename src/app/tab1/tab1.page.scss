@@ -1,0 +1,62 @@
+  .welcome-card img {
+    max-height: 50vh;
+    overflow: hidden;
+    opacity:.80;
+
+    
+  }
+  .title{
+    background-color:#BACFD9;
+    font-size: 14px;
+    //height: 50px;
+  }
+.welcome-card{
+  border-bottom: 2px solid silver;
+  margin-top: 0px;
+  width:100%;
+  margin-left: 0px;
+  background-color: #CFDFDF;
+}
+.welcome{
+  font-size:15px;
+}
+
+.tip{
+  margin-top: -20px;
+}
+  
+
+  .card ion-item{
+    background-color: none;
+    height: 103%;
+    border: 2px solid silver;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 2px solid gray;
+    margin-top: 20px;
+    //margin-bottom: 10px;
+    border-radius: 8px;
+   // vertical-align: middle;
+    width: 95%;
+    vertical-align: middle;
+    
+
+  }
+  
+  .card{
+    background-color: none;
+    margin-left: 0px;
+    width: 99%;
+    padding-left: 22px;
+    
+    
+  }
+  
+.card ion-label {
+  vertical-align: middle;
+}
+  
+
+  ion-list {
+    background-color: none;
+  }

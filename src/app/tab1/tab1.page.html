@@ -1,0 +1,35 @@
+<ion-header translate="true">
+  <ion-toolbar color="light">
+    <ion-title style="font-size: 14px;">
+      Medical Insurance Guide
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="/assets/home_img.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-title class="welcome"
+        >Welcome to Medical insurance Guide</ion-card-title
+      >
+    </ion-card-header>
+    <ion-card-content>
+      <p class="tip">
+        This service helps you to reach all companies and view plans and
+        hospitals
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list lines="none">
+    <ion-card class="card">
+      <ion-item href="plans/{{item.c_id}}" *ngFor="let item of companies">
+        <ion-label>{{ item.c_name }} </ion-label>
+        <ion-badge color="secondary">{{item.rate}}</ion-badge>
+        <br>
+
+      </ion-item>
+    </ion-card>
+  </ion-list>
+</ion-content>

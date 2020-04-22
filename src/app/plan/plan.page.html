@@ -1,0 +1,38 @@
+<ion-header >
+  <ion-toolbar color="light">
+    <ion-button (click)="goBack()" slot="start" href="plans/:id" color="light">
+      <ion-icon  name="md-arrow-round-back" md="md-arrow-round-back"></ion-icon >    
+     </ion-button>
+    <ion-title>{{plan.p_name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+
+<ion-card>
+  <ion-item >
+    <ion-icon name="logo-usd" alert="price" slot="start"></ion-icon>
+    <ion-label align="center"> {{plan.p_price}}</ion-label>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item >
+    <ion-icon  name="ios-globe" slot="start"></ion-icon>
+    <ion-label align="center"><ion-icon  name="ios-checkbox-outline"></ion-icon></ion-label>
+  </ion-item>
+</ion-card>
+
+<ion-list>
+  <ion-list-header color="primary">
+    <ion-label>hospitals</ion-label>
+  </ion-list-header>
+  
+  
+  
+  <ion-item *ngFor="let item of hospital" href="hospital/{{item.hospital_id}}" >{{item.h_name}}</ion-item>
+  
+  
+</ion-list>
+</ion-content>

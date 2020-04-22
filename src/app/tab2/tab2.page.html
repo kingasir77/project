@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+Hospital List    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    
+  <ion-list lines="none">
+    <ion-card class="card"  href="hospital/{{item.h_id}}" *ngFor="let item of hospitals">
+      
+      
+      <ion-item>
+        <ion-label>{{ item.h_name }} Hospital</ion-label>
+      </ion-item>
+      
+      
+    </ion-card>
+  </ion-list>
+
+ 
+  
+</ion-content>
