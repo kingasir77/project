@@ -1,5 +1,5 @@
 
-# MEDICAL INSURANCE GUID
+# MEDICAL INSURANCE GUIDE
 ____
 - **Architecture**
 	- Server side
